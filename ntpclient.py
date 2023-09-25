@@ -106,9 +106,9 @@ def ntpPktToRTTandOffset(pkt: bytes, T1: float, T4: float) -> (float, float):
     offset = ((T2-T1) + (T3-T4))/2
 
 
-    #print(f"rtt is: {rtt:.10f} seconds.")
-    #print(f"That is equal to : {rtt * 1000:.10f} milliseconds.")
-    #print(f"offset is: {offset:.10f} second.")
+    print(f"rtt is: {rtt:.10f} seconds.")
+    print(f"That is equal to : {rtt * 1000:.10f} milliseconds.")
+    print(f"offset is: {offset:.10f} second.")
 
     return rtt, offset
 
